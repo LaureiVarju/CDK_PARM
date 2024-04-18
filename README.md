@@ -36,3 +36,4 @@ The app is built with Flask to create a HTTP server. The server is hosted on AWS
 - [ ] Clean up and document current code
 - [ ] Abstract commands
 - [ ] Setup a database
+- [ ] Setup wiki
