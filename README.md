@@ -4,7 +4,7 @@ Pre-Approved Randomized Messenger
 PARM is a discord bot that allows users to store messages and links in a AWS Redshift database.
 That data is then sent to a target user at semi-randomized intervals (if the target user has opted to receive them)
 
-This bot is hosted on AWS Lambda. It uses Discord Interactions Endpoint.
+This bot is hosted on AWS Lambda. It uses Discord Interactions endpoints.
 The app is built with Flask to create a HTTP server. The server is hosted on AWS Lambda Docker Container using AWS CDK.
 
 # To Do:
