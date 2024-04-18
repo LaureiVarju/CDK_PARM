@@ -1,14 +1,35 @@
-# Welcome to your CDK TypeScript project
+# PARM
+Pre-Approved Randomized Messenger
 
-This is a blank project for CDK development with TypeScript.
+PARM is a discord bot that allows users to store messages, links, and attachments in a AWS Redshift database.
+That data is then sent to a target user at semi-randomized intervals (if the target user has opted in to receive them)
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+# To Do:
+- [X] Create repo
+- [X] Install VSCode
+- [X] Install Python
+- [X] Prepare PATH variables for Python, pip, Node, and npm
+- [X] Install pip
+- [X] Create test server
+- [X] Create new bot id
+- [X] Get discord.py installed
+- [X] Get PARM connected to a server
+- [X] Get PARM code v.1 online locally
+- [X] Learn about Privileged Intents to make code work in channels
+- [X] Hook up git to VSCode
+- [X] setup gitignore
+- [X] Get Node/npm to be able to download AWS CDK
+- [X] Setup AWS CDK
+- [X] Setup AWS Toolkit for VSCode
+- [X] Install the AWS CLI and fix PATH variables
+- [X] Setup AWS short-term credentials
+- [X] Bootstrap with CDK
+- [X] install Docker
+- [X] deploy
+- [X] setup the AWS Lambda handler function in the code
+- [X] setup a webhook in the server
+- [X] abstract away environment variables
+- [X] Get Current Code hosted and running in AWS Lambda
+- [ ] Clean up and document current code
+- [ ] Abstract commands
+- [ ] Setup a database
