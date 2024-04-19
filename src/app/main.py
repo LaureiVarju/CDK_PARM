@@ -16,7 +16,7 @@ import os
 # # Grab the API token from the .env file.
 # DISCORD_PUBLIC_KEY = os.getenv("DISCORD_PUBLIC_KEY")
 
-#grabs environment variable from AWS Lambda?
+#grabs environment variable from AWS Lambda
 DISCORD_PUBLIC_KEY = os.environ.get("DISCORD_PUBLIC_KEY")
 
 
@@ -39,7 +39,7 @@ def interact(raw_request):
         data = raw_request["data"]
         command_name = data["name"]
 
-        response_data = execute_slash_command(command_name)
+        response_data = execute_slash_command(command_name, raw_request)
         
         # if command_name == "hello":
         #     message_content = "Hello there!"
@@ -50,6 +50,7 @@ def interact(raw_request):
         # }
 
         print(f"response_data is: {response_data}")
+        print(f"jsonified is" + str(jsonify(response_data)))
 
     return jsonify(response_data)
 
