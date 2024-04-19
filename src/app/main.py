@@ -1,5 +1,8 @@
 from mangum import Mangum
 from asgiref.wsgi import WsgiToAsgi
+from helpers import execute_slash_command
+
+
 
 from flask import Flask, jsonify, request
 from discord_interactions import verify_key_decorator
@@ -13,7 +16,7 @@ import os
 # # Grab the API token from the .env file.
 # DISCORD_PUBLIC_KEY = os.getenv("DISCORD_PUBLIC_KEY")
 
-#grabs environment variable from AWS Lambda?
+#grabs environment variable from AWS Lambda
 DISCORD_PUBLIC_KEY = os.environ.get("DISCORD_PUBLIC_KEY")
 
 
@@ -35,16 +38,19 @@ def interact(raw_request):
     else:
         data = raw_request["data"]
         command_name = data["name"]
-        
-        if command_name == "hello":
-            message_content = "Hello there!"
 
-        response_data = {
-            "type": 4,
-            "data": {"content": message_content},
-        }
+        response_data = execute_slash_command(command_name, raw_request)
+        
+        # if command_name == "hello":
+        #     message_content = "Hello there!"
+
+        # response_data = {
+        #     "type": 4,
+        #     "data": {"content": message_content},
+        # }
 
         print(f"response_data is: {response_data}")
+        print(f"jsonified is" + str(jsonify(response_data)))
 
     return jsonify(response_data)
 

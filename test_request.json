@@ -1,16 +1,46 @@
-{
-    "data": {
-      "id": "1138848110735527936",
-      "name": "hello",
-      "options": [
-        {
-          "name": "message",
-          "type": 3,
-          "value": "this is a test message"
-        }
-      ],
-      "type": 1
+  {
+    "app_permissions":"180224",
+    "application_id":"1227702711890477056",
+    "channel":{
+       "flags":0,
+       "id":"1227716497271427142",
+       "last_message_id":"1230601966690766918",
+       "recipients":[
+          {
+             "avatar":"ba30188f55c9ee7d1b42f1b6f5c4daa8",
+             "avatar_decoration_data":"None",
+             "clan":"None",
+             "discriminator":"0",
+             "global_name":"Vizu/Laurei",
+             "id":"225812069704925184",
+             "public_flags":0,
+             "username":"vizu_laurei"
+          }
+       ],
+       "type":1
     },
-    "token": "XXXXXX",
-    "type": 2
-  }
+    "channel_id":"1227716497271427142",
+    "data":{
+       "id":"1229911046156980244",
+       "name":"cat",
+       "type":1
+    },
+    "entitlements":[
+       
+    ],
+    "id":"1230646535688163348",
+    "locale":"en-US",
+    "token":"aW50ZXJhY3Rpb246MTIzMDY0NjUzNTY4ODE2MzM0ODpkbnZDM09wV2tIcUEzZzVleXBSRENIQ1JCamJRQzhSTmM5MDRNZlVLWW5meEtiSVBJdDNaWWVUam5ZUGM0S3hMV25WcHB4MWVaR3ZIeTFTd0pjcG44NE5wUFloeTNwZ2xNY0gzZWw0TmNkYzYxaGRwS2NEeklxNklCTzdQeG5Qdw",
+    "type":2,
+    "user":{
+       "avatar":"ba30188f55c9ee7d1b42f1b6f5c4daa8",
+       "avatar_decoration_data":"None",
+       "clan":"None",
+       "discriminator":"0",
+       "global_name":"Vizu/Laurei",
+       "id":"225812069704925184",
+       "public_flags":0,
+       "username":"vizu_laurei"
+    },
+    "version":1
+ }
