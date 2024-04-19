@@ -2,3 +2,5 @@
   description: say bye
 - name: hello
   description: say hello
+- name: duck
+  description: quack

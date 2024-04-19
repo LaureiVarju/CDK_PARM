@@ -1,5 +1,8 @@
 from mangum import Mangum
 from asgiref.wsgi import WsgiToAsgi
+from helpers import execute_slash_command
+
+
 
 from flask import Flask, jsonify, request
 from discord_interactions import verify_key_decorator
@@ -35,14 +38,16 @@ def interact(raw_request):
     else:
         data = raw_request["data"]
         command_name = data["name"]
-        
-        if command_name == "hello":
-            message_content = "Hello there!"
 
-        response_data = {
-            "type": 4,
-            "data": {"content": message_content},
-        }
+        response_data = execute_slash_command(command_name)
+        
+        # if command_name == "hello":
+        #     message_content = "Hello there!"
+
+        # response_data = {
+        #     "type": 4,
+        #     "data": {"content": message_content},
+        # }
 
         print(f"response_data is: {response_data}")
 
