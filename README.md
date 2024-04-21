@@ -34,6 +34,6 @@ The app is built with Flask to create a HTTP server. The server is hosted on AWS
 - [X] abstract away environment variables
 - [X] Get Current Code hosted and running in AWS Lambda
 - [ ] Clean up and document current code
-- [ ] Abstract commands
+- [X] Abstract commands
 - [ ] Setup a database
 - [ ] Setup wiki
